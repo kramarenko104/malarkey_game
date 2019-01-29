@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="Content" minHeight="606.0" prefHeight="606.0" prefWidth="989.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fffdcc" height="333.0" layoutX="14.0" layoutY="14.0" strokeType="INSIDE" strokeWidth="2.7" width="960.9998779296875">
+    <stroke>
+      <Color blue="0.576" green="0.000" red="0.600" fx:id="x3" />
+    </stroke>
+  </Rectangle>
+  <Label contentDisplay="CENTER" layoutX="15.0" layoutY="353.0" prefHeight="32.0" prefWidth="493.0" text="You can add some new words to the dictionary:" textAlignment="CENTER" textFill="$x3" textOverrun="CLIP" underline="false" wrapText="false">
+    <font>
+      <Font name="System Bold" size="16.0" fx:id="x2" />
+    </font>
+  </Label>
+  <Label contentDisplay="CENTER" layoutX="39.0" layoutY="40.0" prefHeight="32.0" prefWidth="292.0" text="Let's write great masterpiece!" textAlignment="CENTER" textFill="$x3" textOverrun="CLIP" underline="false" wrapText="false">
+    <font>
+      <Font name="System Bold" size="20.0" />
+    </font>
+  </Label>
+  <Label layoutX="18.0" layoutY="406.0" prefWidth="231.0" text="Add phrase describing 'WHO':" textAlignment="LEFT" textFill="BLACK">
+    <font>
+      <Font size="14.0" fx:id="x4" />
+    </font>
+  </Label>
+  <Label font="$x4" layoutX="18.0" layoutY="448.0" text="Add phrase describing 'WHAT DOES':" textFill="BLACK" />
+  <Label font="$x4" layoutX="18.0" layoutY="491.0" text="Add phrase describing 'WHERE':" textFill="BLACK" />
+  <Label font="$x4" layoutX="18.0" layoutY="534.0" text="Add phrase describing 'WHY':" textFill="BLACK" />
+  <effect>
+    <InnerShadow color="#990000" height="30.45744680851064" radius="14.72872340425532" width="30.45744680851064" />
+  </effect>
+  <Button id="btnExit" layoutX="865.0" layoutY="552.0" minHeight="19.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="Exit game">
+    <font>
+      <Font name="System Bold" size="15.0" fx:id="x1" />
+    </font>
+    <textFill>
+      <Color blue="0.192" green="0.000" red="0.400" fx:id="x6" />
+    </textFill>
+  </Button>
+  <Button id="btnWho" layoutX="703.0" layoutY="400.0" minHeight="24.0" mnemonicParsing="false" prefHeight="30.0" text="add WHO" textFill="BLACK">
+    <font>
+      <Font name="System Bold" size="12.0" fx:id="x5" />
+    </font>
+  </Button>
+  <Button id="btnWhatDoes" font="$x5" layoutX="703.0" layoutY="442.0" minHeight="24.0" mnemonicParsing="false" prefHeight="30.0" text="add WHAT DOES" textFill="BLACK" />
+  <Button id="btnWhere" font="$x5" layoutX="703.0" layoutY="484.0" minHeight="24.0" mnemonicParsing="false" prefHeight="30.0" text="add WHERE" textFill="BLACK" />
+  <Button id="btnWhy" font="$x5" layoutX="703.0" layoutY="529.0" minHeight="24.0" mnemonicParsing="false" prefHeight="30.0" text="add WHY" textFill="BLACK" />
+  <TextArea id="sentencesText" layoutX="23.0" layoutY="86.0" prefHeight="248.0" prefWidth="943.0" wrapText="true" />
+  <TextField id="whatDoesText" layoutX="259.0" layoutY="442.0" prefColumnCount="50" prefWidth="435.0" />
+  <TextField id="whoText" layoutX="259.0" layoutY="400.0" prefColumnCount="50" prefWidth="435.0" />
+  <TextField id="whereText" layoutX="259.0" layoutY="486.0" prefColumnCount="50" prefWidth="435.0" />
+  <TextField id="whyText" layoutX="259.0" layoutY="529.0" prefColumnCount="50" prefWidth="435.0" />
+  <Button id="btnMusic" layoutX="828.0" layoutY="32.0" minHeight="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="129.0" text="Stop music" textFill="#992500">
+    <font>
+      <Font name="System Bold" size="14.0" />
+    </font>
+  </Button>
+  <Button id="btnStartGame" font="$x2" layoutX="331.0" layoutY="38.0" minHeight="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="167.0" text="Create sentence" textFill="#cc00c4" />
+</AnchorPane>
